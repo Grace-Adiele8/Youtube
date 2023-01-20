@@ -8,7 +8,7 @@ import { Category } from '@mui/icons-material';
 
 
 
-function Sidebar({selectedCategory, setselectedCategory}) {
+function Sidebar({selectedCategory, setSelectedCategory}) {
   return (
     <Stack 
     direction='row' 
@@ -21,7 +21,7 @@ function Sidebar({selectedCategory, setselectedCategory}) {
       {categories.map((Category) => (
         <button 
         className='category-btn'  
-        onClick={() => setselectedCategory
+        onClick={() => setSelectedCategory
           (Category.name)}  
         
         style={{
