@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { height, Stack } from '@mui/system';
 import { categories } from '../utilits/Constants';
 import { Category } from '@mui/icons-material';
@@ -9,6 +9,10 @@ import { Category } from '@mui/icons-material';
 
 
 function Sidebar({selectedCategory, setSelectedCategory}) {
+ 
+  
+ 
+ 
   return (
     <Stack 
     direction='row' 

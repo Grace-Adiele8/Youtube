@@ -2,7 +2,7 @@ import React from 'react';
 import { Stack } from '@mui/system';
 import { Link } from 'react-router-dom';
 import { logo } from '../../utilits/Constants';
-import SearchBar from '../SearchBar';
+import  SearchBar from '../SearchBar';
 
 
 function Navbar() {

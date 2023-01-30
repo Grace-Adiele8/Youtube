@@ -9,10 +9,10 @@ import { Typography } from '@mui/material';
 
 function Channel() {
   const [channelDetail, setChannelDetail] = useState(null);
-  const [Videos, setVideos] = useState([])
+  const [videos, setVideos] = useState([])
   const {id} = useParams();
 
-
+console.log(channelDetail);
 
   
   useEffect(() => {

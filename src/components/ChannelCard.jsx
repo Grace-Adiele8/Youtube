@@ -5,8 +5,8 @@ import { demoProfilePicture } from '../utilits/Constants';
 import { CheckCircle } from '@mui/icons-material';
 
 function ChannelCard({channelDetail, marginTop}) {
-  
-  return (
+
+   return (
     <Box sx={{
       boxShadow: 'none',
       borderRadius: '20px',
@@ -23,7 +23,7 @@ function ChannelCard({channelDetail, marginTop}) {
 
       <CardContent sx={{ display: 'flex', flexDirection:'column',color: '#fff'}}>
        <CardMedia
-         image={channelDetail?.snippet?.thumbnais?.high?.url || demoProfilePicture}
+         image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt= {channelDetail?.snippet?.title} 
           sx={{ borderRadius: '50%', height: '180px', width: '180px', mb:2, border: '1px solid #e3e3e3' }}
            />
