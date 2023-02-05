@@ -30,12 +30,12 @@ function VideoDetail() {
   
      
      fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
-      .then((data) => setVideos(data.items[0]));   
+      .then((data) => setVideos(data.items));   
  
     }, [id]);
   
   
-  // const { statistcs: {viewCount, likeCount}} = videoDetail;
+  
   
    
   return (

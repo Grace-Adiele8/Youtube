@@ -27,13 +27,8 @@ const { searchTerm} = useParams();
          Search Results for: <span style={{ color: '#f31503'}}> {searchTerm}</span> videos
         </Typography>
         <Videos videos={videos} />
-
-
       </Box>
-
-
-  
-  )
+    )
 }
 
 export default SearchFeed
