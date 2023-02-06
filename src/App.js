@@ -1,5 +1,5 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import { Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed,SearchBar, Sidebar, Videos} from './components';
+import { Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from './components';
 import { Box } from '@mui/system';
 
 function App() {

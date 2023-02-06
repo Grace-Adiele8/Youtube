@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
-import { height, Stack } from '@mui/system';
+import React from 'react';
+import { Stack } from '@mui/system';
 import { categories } from '../utilits/Constants';
-import { Category } from '@mui/icons-material';
-
-
-
-
 
 
 function Sidebar({selectedCategory, setSelectedCategory}) {
- 
-  
- 
- 
   return (
     <Stack 
     direction='row' 
@@ -34,9 +25,7 @@ function Sidebar({selectedCategory, setSelectedCategory}) {
             <span style={{ opacity: Category.name === selectedCategory ? '1' : '0.8'}}>{Category.name}</span>
         </button>
       )
-      
-      
-      )
+       )
 
       }
     </Stack>

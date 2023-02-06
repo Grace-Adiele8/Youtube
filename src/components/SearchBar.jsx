@@ -4,16 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { Paper, IconButton  } from '@mui/material';
 import {Search} from "@mui/icons-material";
 
-
-
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
- 
-
   const navigate = useNavigate();
- 
- 
-  const handleSumbit = (e)  => {
+     const handleSumbit = (e)  => {
     e.preventDefault();
    
     if(searchTerm) {
@@ -23,15 +17,7 @@ function SearchBar() {
       setSearchTerm('');
     } 
       
-    
-  
-  
-  }
-
-  
-  
-  
-  
+    }
    return (
     <div>
       <Paper component='form' 

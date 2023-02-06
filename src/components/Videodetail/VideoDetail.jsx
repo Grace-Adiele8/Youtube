@@ -8,23 +8,12 @@ import { CheckCircle } from '@mui/icons-material';
 import { Videos} from '../';
 import { fetchFromAPI } from '../../utilits/fetchFromAPI';
 
-
-
-
-
-
-
-
-
 function VideoDetail() {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
   const { id } = useParams();
   
-  
-
-  
-  useEffect(() => {
+   useEffect(() => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}`)
      .then((data) => setVideoDetail(data.items[0]));
   
@@ -34,11 +23,7 @@ function VideoDetail() {
  
     }, [id]);
   
-  
-  
-  
-   
-  return (
+   return (
     <Box minHeight='95vh' >
       <Stack direction={{xs: 'column', md: 'row'}}>
       <Box flex={1}>
